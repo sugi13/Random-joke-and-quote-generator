@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body{
+    background: #223263;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+}
+/* navbar */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+.links{
+  display: flex; 
+  gap: 50px; 
+}
+.links li{
+    list-style-type: none;
+    padding: 25px;
+}
+.Link{
+    text-decoration: none;
+    color: rgb(236, 233, 35);
+    font-weight: 400;
+}
+.content-layout{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    margin-left: 30px;
+}
+.text{
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 100px;
+    background-image: url(/src/assets/blob.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size:cover;
+    padding: 50px;
+}
+em{
+      color:rgb(236, 233, 35);
+}
+img{
+    width: 80%;
+}
+/* Random Joke */
+.joke-container, .quote-container{
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+}
+.joke-content, .quote-content{
+    width: 30%;
+    padding: 40px;
+    border-radius: 5px;
+    background: #0d1324;
+}
+.joke-content h1{
+    font-size: 1.5rem;
+}
+.content p{
+    font-weight: 800;
+    color:#37509b;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 5px;
+    border: none;
+}
+.icon-img img{
+    width: 20px;
+    position: relative;
+    top: 15px;
+}
+/* Random Quote */
+.quote-content h1{
+    font-size: 1.2rem;
+}
+.Content p{
+    font-size: 1rem;
+    padding: 10px;
+    color: #044793;
+}
+
+@media screen and (max-width: 578px) {
+    .nav {
+        flex-direction: column;
+    }
+    .links{
+        gap: 10px;
+    }
+    .links li{
+        padding: 10px;
+        background: #0d1324;
+        border-radius: 5px;
+        font-size: .9rem;
+    }
+    .content-layout{
+        margin-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .text{
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+    .illustration img{
+        width: 100%;
+        height: auto;
+    }
+    .joke-content, .quote-content{
+        width: 100%;
+        margin-top: 50px;
+        padding: 24px;
+    }
+    .joke-content h1{
+        font-size: 1.1rem;
+    }
+    .quote-content h1{
+        font-size: 1.1rem;
+    }
+    .icon-img img{
+        width: 24px;
+    }
+}
